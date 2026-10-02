@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful Calculator</title>
+    <meta
+      name="description"
+      content="A cheerful, responsive calculator with pastel styling and keyboard support."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="app-header" aria-label="Calculator title">
+        <p class="eyebrow">Smart everyday tool</p>
+        <h1>Arya Calculator</h1>
+      </header>
+
+      <main class="app-shell" aria-label="Calculator app">
+        <section class="calculator" aria-label="Calculator">
+          <div class="display" aria-live="polite" aria-atomic="true">
+            <div class="display-label">Expression</div>
+            <div id="expression" class="expression" aria-live="polite">0</div>
+            <div class="display-label result-label">Result</div>
+            <div id="result" class="result" aria-live="polite">0</div>
+          </div>
+
+          <div class="button-grid" aria-label="Calculator buttons">
+            <button class="btn action" data-action="clear" aria-label="Clear all">C</button>
+            <button class="btn action" data-action="delete" aria-label="Backspace">⌫</button>
+            <button class="btn operator" data-value="/" aria-label="Divide">÷</button>
+            <button class="btn operator" data-value="*" aria-label="Multiply">×</button>
+
+            <button class="btn number" data-value="7" aria-label="7">7</button>
+            <button class="btn number" data-value="8" aria-label="8">8</button>
+            <button class="btn number" data-value="9" aria-label="9">9</button>
+            <button class="btn operator" data-value="-" aria-label="Subtract">−</button>
+
+            <button class="btn number" data-value="4" aria-label="4">4</button>
+            <button class="btn number" data-value="5" aria-label="5">5</button>
+            <button class="btn number" data-value="6" aria-label="6">6</button>
+            <button class="btn operator" data-value="+" aria-label="Add">+</button>
+
+            <button class="btn number" data-value="1" aria-label="1">1</button>
+            <button class="btn number" data-value="2" aria-label="2">2</button>
+            <button class="btn number" data-value="3" aria-label="3">3</button>
+            <button class="btn accent" data-value="." aria-label="Decimal point">.</button>
+
+            <button class="btn number wide" data-value="0" aria-label="0">0</button>
+            <button class="btn equals wide" data-action="equals" aria-label="Equals">=</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
